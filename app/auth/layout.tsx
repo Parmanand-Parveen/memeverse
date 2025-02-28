@@ -10,7 +10,7 @@ export default function AuthLayout({
   children: React.ReactNode;
 }) {
   const router = useRouter();
-  const { data: session, status } = useSession();
+  const { data:  status } = useSession();
 
   useEffect(() => {
     if (status === "authenticated") {

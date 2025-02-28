@@ -49,7 +49,7 @@ const SignIn = () => {
             Sign in with GitHub
           </HoverBorderGradient>
         </motion.div>
-        Don't have an account?{" "} <Link href="/auth/signup" className="text-blue-500 hover:underline transition">Sign Up</Link>
+       <p> Don't have an account?{" "} <Link href="/auth/signup" className="text-blue-500 hover:underline transition">Sign Up</Link></p>
       </motion.div>
     </div>
   );

@@ -4,14 +4,6 @@ import {MongoDBAdapter} from "@auth/mongodb-adapter"
 import Google from "next-auth/providers/google";
 import Github from "next-auth/providers/github";
 
-declare module "next-auth" {
-  interface Session {
-    user: {
-      id:string,
-
-    } & DefaultSession["user"];
-  }
-}
 
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
